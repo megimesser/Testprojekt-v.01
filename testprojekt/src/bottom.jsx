@@ -11,19 +11,24 @@ function Bottom() {
   // Modale Fenster Komponente innerhalb von Bottom.jsx definiert
   function Modal() {
     return (
-      <div className="modal" id = "modal">
+      <div className="modal" id="modal">
         <div className="modal-content">
           <span className="close-button" onClick={toggleModal}>&times;</span>
           <h2>Übungen</h2>
           <ul>
-            <li data-value= "10">Laufen</li>
-            <li data-value= "10">Spazieren</li>
-            <li data-value= "10">Yoga</li>
+            <li className="tooltip" data-value="10">
+              Laufen
+              <span className="tooltiptext">10 Erfahrungspunkte</span>
+            </li>
+            <li className="tooltip" data-value="20">
+              Spazieren
+              <span className="tooltiptext">20 Erfahrungspunkte</span>
+            </li>
+            <li className="tooltip" data-value="30">
+              Yoga
+              <span className="tooltiptext">30 Erfahrungspunkte</span>
+            </li>
             <li><button>Eigene Übung hinzufügen</button></li>
-
-
-
-
           </ul>
         </div>
       </div>
