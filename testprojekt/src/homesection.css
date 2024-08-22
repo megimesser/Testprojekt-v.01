@@ -2,4 +2,12 @@
     background-color: aqua;
     height: 500px;
     width: 1000px; 
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+hr{
+    width:50%;
+    background-color: black;
+    height: 2px;
 }

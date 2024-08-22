@@ -1,0 +1,18 @@
+.progress-container {
+    width: 80%; /* Nimmt 70% der Ansichtsbreite ein */
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px auto; /* Zentriert den Container horizontal */
+}
+
+/* Innerer Balken, der den Fortschritt anzeigt */
+.progress-bar {
+    height: 50px;
+    width: 0%; /* Startet bei 0% */
+    background-color: #4CAF50;
+    text-align: center; /* Zentriert den Text */
+    line-height: 30px; /* Zentriert den Text vertikal */
+    color: white;
+    border-radius: 25px;
+}
