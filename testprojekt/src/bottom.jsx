@@ -16,11 +16,9 @@ function Bottom() {
           <span className="close-button" onClick={toggleModal}>&times;</span>
           <h2>Übungen</h2>
           <ul>
-            <li>Laufen</li>
-            <li>Spazieren</li>
-            <li>Yoga</li>
-            <li></li>
-            <li></li>
+            <li data-value= "10">Laufen</li>
+            <li data-value= "10">Spazieren</li>
+            <li data-value= "10">Yoga</li>
             <li><button>Eigene Übung hinzufügen</button></li>
 
 

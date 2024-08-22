@@ -9,7 +9,7 @@
 /* Innerer Balken, der den Fortschritt anzeigt */
 .progress-bar {
     height: 50px;
-    width: 0%; /* Startet bei 0% */
+    width: 50%; /* Startet bei 0% */
     background-color: #4CAF50;
     text-align: center; /* Zentriert den Text */
     line-height: 30px; /* Zentriert den Text vertikal */
