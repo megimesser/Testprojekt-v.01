@@ -1,0 +1,16 @@
+.profile img{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#nav {
+    width: 100%;
+    background-color: blue;
+    margin-top: 0%;
+    padding-top: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+

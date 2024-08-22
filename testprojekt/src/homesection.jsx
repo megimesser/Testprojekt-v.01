@@ -1,13 +1,15 @@
 import React from 'react';
 import "./homesection.css";
+import "./background.css"
 import Profile from "./Profile";
 import Bottom from "./bottom"
 import Ladebalken from "./ladebalken"
 
+
 function Home() {
   return (
-    <>
-    <div id = "background">
+   
+   
     <div id="home">
       
       <Profile />
@@ -15,8 +17,8 @@ function Home() {
       <Ladebalken />
       <Bottom />
     </div>
-    </div>
-    </>
+    
+   
   );
 }
 

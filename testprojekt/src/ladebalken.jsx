@@ -8,7 +8,7 @@ function ladebalken() {
 
     <div class="progress-container">
        
-        <div class="progress-bar" id="myBar">0%</div>
+        <div class="progress-bar" id="myBar">0</div>
     </div>
     </>
 
