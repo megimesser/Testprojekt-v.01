@@ -8,7 +8,6 @@ function Bottom() {
     setIsModalOpen(!isModalOpen);
   };
 
-  // Modale Fenster Komponente innerhalb von Bottom.jsx definiert
   function Modal() {
     return (
       <div className="modal" id="modal">
@@ -39,7 +38,6 @@ function Bottom() {
     <div id="bottom">
       <button onClick={toggleModal}>Trainieren</button>
       <button>Statistik</button>
-      {/* Modales Fenster wird direkt hier gerendert, wenn isModalOpen true ist */}
       {isModalOpen && <Modal />}
     </div>
   );

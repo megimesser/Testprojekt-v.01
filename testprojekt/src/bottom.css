@@ -18,14 +18,23 @@
     position: relative;
   }
   
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+  /* Flexbox für die Liste */
+  ul {
+    list-style-type: none; /* Entfernt die Standard-Aufzählungszeichen */
+    padding: 0;
+    margin: 0;
+     /* Flexbox aktivieren */
+    flex-wrap: wrap; /* Ermöglicht das Umwickeln der Elemente, wenn sie nicht in eine Zeile passen */
   }
   
-  /* Tooltip-Stile */
+  li {
+    margin: 5px; /* Abstand zwischen den Listenelementen */
+    padding: 10px; /* Innenabstand der Listenelemente */
+    background-color: #f3f3f3; /* Hintergrundfarbe der Listenelemente */
+    border-radius: 5px; /* Abgerundete Ecken */
+    cursor: pointer; /* Zeigt den Pointer-Cursor an, um anzuzeigen, dass die Elemente klickbar sind */
+  }
+  
   .tooltip {
     position: relative;
     display: inline-block;
@@ -34,7 +43,7 @@
   
   .tooltip .tooltiptext {
     visibility: hidden;
-    width: 80px; /* Breite des Tooltips */
+    width: 80px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -42,12 +51,12 @@
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Positionierung des Tooltips */
+    bottom: 125%;
     left: 50%;
-    margin-left: -40px; /* Zentriert den Tooltip */
+    margin-left: -40px;
     opacity: 0;
     transition: opacity 0.3s;
-    white-space: nowrap; /* Verhindert Zeilenumbruch im Tooltip */
+    white-space: nowrap;
   }
   
   .tooltip:hover .tooltiptext {

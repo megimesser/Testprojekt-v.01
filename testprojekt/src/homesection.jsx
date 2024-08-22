@@ -6,6 +6,8 @@ import Ladebalken from "./ladebalken"
 
 function Home() {
   return (
+    <>
+    <div id = "background">
     <div id="home">
       
       <Profile />
@@ -13,6 +15,8 @@ function Home() {
       <Ladebalken />
       <Bottom />
     </div>
+    </div>
+    </>
   );
 }
 
