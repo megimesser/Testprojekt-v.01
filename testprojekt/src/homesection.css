@@ -4,6 +4,8 @@
     width: 1000px; 
     padding-top: 5%;
     padding-bottom: 5%;
+    margin: 0 auto;
+    border-radius: 5%;
 }
 
 hr{
@@ -11,3 +13,4 @@ hr{
     background-color: black;
     height: 2px;
 }
+
