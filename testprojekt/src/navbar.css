@@ -1,15 +1,87 @@
 .profile img{
     height: 70px;
     width: 70px;
-    background-color: black;
+    background-color: rgb(212, 10, 10);
     border-radius: 50%;
+    overflow: hidden; 
+    
+}
+
+.profile {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+
 }
 
 #nav {
     width: 100%;
-    background-color: blue;
+    background-color: #01FFFF;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-height: 30px;
+    max-height:100px;
+    
+    
+    
+
 }
 
+.hamburger img{
+    height:50px;
+    overflow: hidden;
+    padding-right: 1.5rem;
+    
+   
+}
+
+
+
+/*switch CSS*/
+
+/* Switch.css */
+.switch {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .switch.on {
+    background-color: #4caf50;
+  }
+  
+  .switch.off {
+    background-color: #ccc;
+  }
+  
+  .switch-button {
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .switch-button.on {
+    transform: translateX(30px);
+  }
+  
+  .switch-button.off {
+    transform: translateX(0);
+  }
+  
+
+  #wrapper-0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

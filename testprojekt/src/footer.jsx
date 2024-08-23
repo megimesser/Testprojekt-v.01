@@ -1,25 +1,27 @@
 import React from 'react';
-import "./homesection.css";
-import "./background.css"
-import Profile from "./Profile";
-import Bottom from "./bottom"
-import Ladebalken from "./ladebalken"
+import "./footer.css";
 
 
-function Home() {
+
+function Foot() {
   return (
    
    
-    <div id="home">
+    <div id="foot">
+      <div id="footerContainer">
+        <ul>
+            <li>Impressum</li>
+            <li>Datenschutz</li>
+            <li>Profile</li>
+        </ul>
+
+
+      </div>
       
-      <Profile />
-      <hr></hr>
-      <Ladebalken />
-      <Bottom />
     </div>
     
    
   );
 }
 
-export default Home;
+export default Foot;
