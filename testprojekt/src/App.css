@@ -74,5 +74,12 @@ html, body {
 }
 
 body {
-  background-color: #d77272;
+  background-color: #ffffff;
 }
+
+
+/* In deiner app.css */
+.light-mode {
+  background-color: #333;
+}
+

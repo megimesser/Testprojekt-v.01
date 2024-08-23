@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './navbar.css';  // Die CSS-Datei für die Navbar-Komponente
+import './App.css';     // Deine globale CSS-Datei
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Zustand für das Öffnen des Menüs
 
-  // Funktion zum Umschalten des Menü-Zustands
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Menü-Komponente
   function Menu() {
     return (
       <div className="menu">
@@ -18,32 +17,33 @@ function Navbar() {
     );
   }
 
+  function Switch() {
+    const [isOn, setIsOn] = useState(false);
 
- 
+    const toggleSwitch = () => {
+      setIsOn(!isOn);
+    };
 
-function Switch() {
-  const [isOn, setIsOn] = useState(false);
+    // Effekt, um die Klasse beim Umschalten anzuwenden
+    useEffect(() => {
+      if (isOn) {
+        document.body.classList.add('light-mode');
+      } else {
+        document.body.classList.remove('light-mode');
+      }
+    }, [isOn]);
 
-  const toggleSwitch = () => {
-    setIsOn(!isOn);
-  };
-
-  return (
-    <>
-    <div id ="wrapper-0">
-    <div>
-      <img src="testprojekt/public/images/OOjs_UI_icon_moon.svg"></img>
-    </div>
-    <div className="switch" onClick={toggleSwitch}>
-      <div className={`switch-button ${isOn ? 'on' : 'off'}`} />
-    </div>
-    </div>
-    </>
-  );
-}
-
-
-
+    return (
+      <div id="wrapper-0">
+        <div>
+          <img src="testprojekt/public/images/OOjs_UI_icon_moon.svg" alt="Moon Icon" />
+        </div>
+        <div className="switch" onClick={toggleSwitch}>
+          <div className={`switch-button ${isOn ? 'on' : 'off'}`} />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div id="nav">
