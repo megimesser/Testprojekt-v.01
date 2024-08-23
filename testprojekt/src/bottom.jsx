@@ -3,10 +3,15 @@ import "./bottom.css";
 
 function Bottom() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isStatsOpen, setStats] = useState(false);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
+
+  const toggleStats = () => {
+    
+  }
 
   function Modal() {
     return (

@@ -11,7 +11,7 @@
 
 .progress-bar {
     height: 80px;
-    width: 2000%; /* Startet bei 0%, wächst nach rechts */
+    width: 50%; /* Startet bei 0%, wächst nach rechts */
     background-color: transparent;
     position: relative;
     text-align: center; /* Zentriert den Text */
