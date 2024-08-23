@@ -30,7 +30,7 @@
   li {
     margin: 5px; /* Abstand zwischen den Listenelementen */
     padding: 10px; /* Innenabstand der Listenelemente */
-    background-color: #f3f3f3; /* Hintergrundfarbe der Listenelemente */
+   /* background-color: #f3f3f3; /* Hintergrundfarbe der Listenelemente */
     border-radius: 5px; /* Abgerundete Ecken */
     cursor: pointer; /* Zeigt den Pointer-Cursor an, um anzuzeigen, dass die Elemente klickbar sind */
   }

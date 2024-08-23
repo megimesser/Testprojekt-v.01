@@ -1,21 +1,16 @@
 import React from 'react';
-import "./ladebalken.css"
+import "./ladebalken.css";
 
-function ladebalken() {
+function Ladebalken() {
   return (
-    <>
-  
-
-    <div class="progress-container">
-       
-        <div class="progress-bar" id="myBar">0</div>
+    <div className="progress-container">
+      <div className="progress-bar">
+        <div className="lava-container">
+          <div className="lava"></div>
+        </div>
+      </div>
     </div>
-    </>
-
-
-
   );
 }
 
-export default ladebalken;
-
+export default Ladebalken;

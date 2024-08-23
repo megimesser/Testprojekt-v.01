@@ -1,5 +1,26 @@
-#foot #footerContainer{
+#foot #footerContainer {
     width: 100%;
-    height: 30px;
-    background-color:aquamarine;
+    
+    
+
 }
+
+#foot{
+    background-color:#01FFFF;
+    margin-top: 4rem;
+    height: 8rem;
+}
+
+#foot #footerContainer ul li{
+    list-style: none;
+    
+}
+
+#foot #footerContainer ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+
+
