@@ -3,14 +3,14 @@
     background-color: #f3f3f3;
     border-radius: 25px;
     overflow: hidden;
-    margin: 20px auto; /* Zentriert den Container horizontal */
+    margin: 50px auto; /* Zentriert den Container horizontal */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .progress-bar {
-    height: 50px;
+    height: 80px;
     width: 2000%; /* Startet bei 0%, wächst nach rechts */
     background-color: transparent;
     position: relative;

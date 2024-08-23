@@ -36,7 +36,7 @@ function Navbar() {
     return (
       <div id="wrapper-0">
         <div>
-          <img src="testprojekt/public/images/OOjs_UI_icon_moon.svg" alt="Moon Icon" />
+          <img id= "switchImage" src="testprojekt/public/images/OOjs_UI_icon_moon.svg" alt="Moon Icon" />
         </div>
         <div className="switch" onClick={toggleSwitch}>
           <div className={`switch-button ${isOn ? 'on' : 'off'}`} />
@@ -53,10 +53,11 @@ function Navbar() {
           alt="Profile" 
         />
       </div>
+      
+      <div className="hamburger">
       <div>
         <Switch />
       </div>
-      <div className="hamburger">
         <img 
           src="/images/burger-menu-svgrepo-com.svg" 
           alt="Hamburger Menu" 

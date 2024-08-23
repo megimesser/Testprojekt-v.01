@@ -64,3 +64,18 @@
     opacity: 1;
   }
   
+  #bottom{
+    margin-top: 3em;;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  #bottom button{
+    height: 3em;
+    width: 10em;
+    font-size: large;
+    font-weight: bold;;
+  }
+
+  

@@ -37,6 +37,11 @@
    
 }
 
+.hamburger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /*switch CSS*/
@@ -84,4 +89,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #switchImage{
+    height:30px;
+    width: 100px;
   }
