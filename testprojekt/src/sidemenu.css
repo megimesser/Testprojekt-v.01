@@ -1,5 +1,40 @@
-#sidemenu{
-    height:300px;
-    z-index: -1;
-    position: absolute;
+.sidemenu {
+    position: absolute;  /* Fixiert das Menü am rechten Rand des Bildschirms */
+                 /* Richtet das Menü am oberen Rand des Bildschirms aus */
+    right: 0;            /* Richtet das Menü am rechten Rand des Bildschirms aus */
+    height: 30rem;        /* Das Menü erstreckt sich über die gesamte Höhe des Bildschirms */
+    min-width: 25rem;        /* Breite der Seitenleiste */
+    background-color: rgba(243, 243, 243, 0.5); /* Hintergrund mit 70% Opazität */
+          /* Innenabstand im Menü */
+    display: none;       /* Versteckt das Menü standardmäßig */
+    z-index: 1000;       /* Stellt sicher, dass das Menü über anderen Elementen liegt */
+    align-items: center; /* Optional: richtet den Inhalt des Menüs am unteren Rand aus */
+    justify-content: center; /* Optional: richtet den Inhalt des Menüs am rechten Rand aus */
+    
+}
+
+.sidemenu ul {
+    padding-top: 2em;
+    
+  
+}
+
+.sidemenu ul li {
+    opacity: 100%;
+    margin: 10px 0;
+    cursor: pointer; /* Der Mauszeiger ändert sich zu einem Zeiger, wenn er über den Text fährt */
+}
+
+.userSectionNav{
+
+}
+
+.userSectionNav img{
+    width: 4em;
+    height: 4em
+    
+}
+
+.paddingContainer {
+    padding-top: 2em;
 }
