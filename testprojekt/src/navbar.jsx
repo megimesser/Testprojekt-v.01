@@ -66,7 +66,6 @@ function Navbar() {
       <div className="hamburger">
       <div>
         <Switch />
-        <Sidemenu />
       </div>
         <img 
           src="/images/burger-menu-svgrepo-com.svg" 
