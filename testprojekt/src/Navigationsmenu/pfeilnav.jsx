@@ -1,5 +1,6 @@
 import React from 'react';
 import "./navigationsmenü.css";
+import {gsap} from "gsap";
 
 function Pfeilnav({ setActiveComponent, activeComponent }) {
 
