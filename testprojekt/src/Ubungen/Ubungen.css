@@ -1,0 +1,64 @@
+
+.ubungen{
+    background-color: aqua;
+    height: 500px;
+    width: 1000px; 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+hr{
+    width:50%;
+    background-color: black;
+    height: 2px;
+}
+
+
+
+.ubungsListe {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to one column */
+    gap: 10px; /* Space between items */
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.ubungsListeElement {
+    background-color: #ffffff; /* Example background */
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 10%;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+    .ubungsListe {
+        grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+    }
+    
+    /* Ensure the first two items are stacked vertically */
+    .ubungsItem:nth-child(1),
+    .ubungsItem:nth-child(2) {
+        grid-column: span 2; /* Span both columns */
+    }
+}
+
+
+/* Interface für Detailansicht der Übungen */ 
+
+.ubungenDetail {
+    display: flex;
+    z-index: 9999;
+    width: 50vw;
+    height:50vh;
+    background-color: #ddd;
+    
+
+}
