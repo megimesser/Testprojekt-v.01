@@ -32,6 +32,7 @@ function Ubungen_detail({ isVisible, item, onClose }) {
                     onChange={(e) => handleSliderChange(parseFloat(e.target.value))}
                 />
                 <p>Minuten: {sliderValue}</p>
+                
             </div>
 
             <button onClick={onClose}>Übung hinzufügen</button>

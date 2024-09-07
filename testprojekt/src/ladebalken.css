@@ -1,3 +1,5 @@
+
+
 .progress-container {
     width: 80%; /* Nimmt 80% der Ansichtsbreite ein */
     background-color: #f3f3f3;
@@ -21,6 +23,7 @@
     overflow: hidden;
     transition: width 1s ease-in-out; /* Glatter Übergang für das Wachstum */
 }
+
 
 .lava-container {
     width: 100%;
