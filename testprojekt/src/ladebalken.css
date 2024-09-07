@@ -1,5 +1,3 @@
-
-
 .progress-container {
     width: 80%; /* Nimmt 80% der Ansichtsbreite ein */
     background-color: #f3f3f3;
@@ -9,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Neue Positionierung für Stapelkontext */
 }
 
 .progress-bar {
@@ -24,6 +23,13 @@
     transition: width 1s ease-in-out; /* Glatter Übergang für das Wachstum */
 }
 
+.progress-percentage {
+    position: relative; /* Damit es über den anderen Elementen bleibt */
+    z-index: 10; /* Höchster z-index */
+    color:coral;
+    font-weight: bold;
+    font-size: 1.5rem;;
+}
 
 .lava-container {
     width: 100%;
@@ -33,6 +39,7 @@
     top: 0;
     left: 0;
     border-radius: 25px;
+    z-index: 1; /* Niedriger z-index, damit es hinter der Prozentanzeige bleibt */
 }
 
 .lava {
@@ -44,6 +51,7 @@
     background: radial-gradient(circle, #006400, #228B22, #32CD32, #00FF00);
     animation: lava-movement 5s infinite linear;
     border-radius: 50%;
+    z-index: 1; /* Lava auch hinter der Prozentanzeige */
 }
 
 @keyframes lava-movement {

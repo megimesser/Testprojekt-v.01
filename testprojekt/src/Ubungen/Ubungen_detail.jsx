@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Ubungen.css";
 
-function Ubungen_detail({ isVisible, item, onClose }) {
+function Ubungen_detail({ isVisible, item, onClose, gewicht }) { // 'gewicht' korrekt als Prop übergeben
     const [sliderValue, setSliderValue] = useState(0); // Zustand für den Schieberegler
     const [calculatedValue, setCalculatedValue] = useState(0); // Zustand für berechneten Wert
 
@@ -9,7 +9,9 @@ function Ubungen_detail({ isVisible, item, onClose }) {
 
     const handleSliderChange = (value) => {
         setSliderValue(value);
-        const result = value * (item?.kaloriepm || 0); // Berechne die verbrannten Kalorien
+        const roundValue = value / 60 
+        console.log(roundValue)
+        const result = roundValue * (item?.MET * gewicht); // Berechne die verbrannten Kalorien korrekt
         setCalculatedValue(result);
     };
 
@@ -18,7 +20,8 @@ function Ubungen_detail({ isVisible, item, onClose }) {
             <h2>Details zu {item?.id}</h2>
             <p>Kalorien pro Minute: {item?.kaloriepm}</p>
             <p>XP: {item?.XP}</p>
-            <p>Verbrannte Kalorien: {calculatedValue}</p>
+            <p>Verbrannte Kalorien: {calculatedValue.toFixed(2)}</p> {/* Kalorienanzeige mit 2 Dezimalstellen */}
+            <p>(Für den Test) :  MET - Wert {item?.MET}</p>
 
             {/* Schieberegler */}
             <div>
@@ -32,7 +35,6 @@ function Ubungen_detail({ isVisible, item, onClose }) {
                     onChange={(e) => handleSliderChange(parseFloat(e.target.value))}
                 />
                 <p>Minuten: {sliderValue}</p>
-                
             </div>
 
             <button onClick={onClose}>Übung hinzufügen</button>
