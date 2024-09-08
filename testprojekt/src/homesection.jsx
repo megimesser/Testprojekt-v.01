@@ -6,7 +6,7 @@ import Bottom from "./bottom";
 import Ladebalken from "./ladebalken";
 import Stats from "./stats";
 
-function Home() {
+function Home({ gainXP }) { // Accept gainXP as a prop
   // Using state to manage xp1, xp2, and level
   const [xp1, setXp1] = useState(0);
   const [xp2, setXp2] = useState(50);
@@ -17,9 +17,6 @@ function Home() {
   const [grundumsatz, setGrundumsatz] = useState(0); 
   const [trainingsdauer, setTrainingsdauer] = useState(0); 
 
-
-
-
   // Function to handle leveling up
   function level() {
     if (xp1 >= xp2) {
@@ -29,10 +26,12 @@ function Home() {
     }
   }
 
-  // Increase XP on user action or event (simulated here)
+  /*
+  // Increase XP on user action or event
   function gainXP(amount) {
     setXp1(prevXp => prevXp + amount);
   }
+  */ 
 
   // Automatically call the level function when xp1 changes
   useEffect(() => {
@@ -48,7 +47,7 @@ function Home() {
       <hr />
       {/* Pass xp1 and xp2 to Ladebalken component */}
       <Ladebalken xp1={xp1} xp2={xp2} />
-      <Stats kalorie={kalorie} grundumsatz = {grundumsatz} trainingsdauer = {trainingsdauer} />
+      <Stats kalorie={kalorie} grundumsatz={grundumsatz} trainingsdauer={trainingsdauer} />
       <Bottom />
 
       {/* Simulate gaining XP on button click */}
