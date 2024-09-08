@@ -12,6 +12,14 @@ function Home() {
   const [xp2, setXp2] = useState(50);
   const [leveln, setLevel] = useState(1);
 
+  // Variablen für Kalorie / Trainingsdauer und Grundumsatz 
+  const [kalorie, setKalorie] = useState(0); 
+  const [grundumsatz, setGrundumsatz] = useState(0); 
+  const [trainingsdauer, setTrainingsdauer] = useState(0); 
+
+
+
+
   // Function to handle leveling up
   function level() {
     if (xp1 >= xp2) {
@@ -40,7 +48,7 @@ function Home() {
       <hr />
       {/* Pass xp1 and xp2 to Ladebalken component */}
       <Ladebalken xp1={xp1} xp2={xp2} />
-      <Stats />
+      <Stats kalorie={kalorie} grundumsatz = {grundumsatz} trainingsdauer = {trainingsdauer} />
       <Bottom />
 
       {/* Simulate gaining XP on button click */}

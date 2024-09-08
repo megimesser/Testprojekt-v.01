@@ -1,64 +1,112 @@
 
-.ubungen{
+
+.ubungenInformationen2{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* Korrekte Klasse für die Detailansicht */
+.ubungenDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    width: 50vw;
+    height: 50vh;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hintergrund für die Komponente */
+.ubungen {
     background-color: aqua;
     height: 500px;
     width: 1000px; 
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 5% 0;
     margin: 0 auto;
     border-radius: 5%;
 }
 
-hr{
-    width:50%;
+hr {
+    width: 50%;
     background-color: black;
     height: 2px;
 }
 
-
-
+/* Liste der Übungen */
 .ubungsListe {
     display: grid;
-    grid-template-columns: 1fr; /* Default to one column */
-    gap: 10px; /* Space between items */
-    list-style-type: none; /* Remove bullets */
+    grid-template-columns: 1fr;
+    gap: 10px;
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .ubungsListeElement {
-    background-color: #ffffff; /* Example background */
+    background-color: #fff;
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
     border-radius: 10%;
     margin: 20px;
     cursor: pointer;
-    
 }
 
-/* Media query for larger screens */
+/* Für größere Bildschirme */
 @media (min-width: 600px) {
     .ubungsListe {
-        grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+        grid-template-columns: 1fr 1fr;
     }
     
-    /* Ensure the first two items are stacked vertically */
+    /* Stapele die ersten zwei Items */
     .ubungsItem:nth-child(1),
     .ubungsItem:nth-child(2) {
-        grid-column: span 2; /* Span both columns */
+        grid-column: span 2;
     }
 }
 
 
-/* Interface für Detailansicht der Übungen */ 
+/* Slider-Schiene (Höhe und Farbe ändern) */
+input[type="range"] {
+    -webkit-appearance: none; /* Entfernt standardmäßiges Browser-Styling (Safari/Chrome) */
+    width: 100%; /* Slider-Breite */
+    height: 8px; /* Höhe der Schiene */
+    background: #4CAF50; /* Farbe der Schiene */
+    border-radius: 5px; /* Runde Kanten der Schiene */
+    outline: none; /* Entfernt die Umrandung, wenn der Slider fokussiert ist */
+}
 
-.ubungenDetail {
-    display: flex;
-    z-index: 9999;
-    width: 50vw;
-    height:50vh;
-    background-color: #ddd;
-    
+/* Thumb (Höhe und Breite optional, falls du es nicht ändern möchtest, kannst du diesen Block weglassen) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Entfernt Standard-Browser-Styling */
+    appearance: none;
+    width: 20px; /* Breite des Thumbs */
+    height: 20px; /* Höhe des Thumbs */
+    background: #4CAF50; /* Farbe des Thumbs */
+    border-radius: 50%; /* Runde den Thumb zu einem Kreis */
+    cursor: pointer; /* Zeige den Zeiger bei Hover an */
+}
 
+/* Firefox Thumb */
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+}
+
+/* IE/Edge Thumb */
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
 }
