@@ -7,7 +7,7 @@ function Sidemenu() {
         <ul>
             <li>Profil</li>
             <li>Leaderboard</li>
-            <li>Statistik</li>
+            <li>AI - Training</li>
             <li>Account</li>
             <li>Einstellungen</li>
         </ul>

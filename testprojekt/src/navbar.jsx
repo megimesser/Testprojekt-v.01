@@ -52,7 +52,7 @@ function Navbar() {
       <div className="profile">
       <div>
         <h1>
-           Active Hero
+           (AI)-ctive Hero
         </h1>
       </div>
         <img 

@@ -1,5 +1,14 @@
-#sidemenu{
-    height:300px;
-    z-index: -1;
-    position: absolute;
+#sidemenu {
+    height: 300px;
+    z-index: 1;
+    position: fixed; /* Fixes the menu to the right even when scrolling */
+    background-color: aqua;
+    width: 20em;
+     /* Aligns the menu to the top */
+    right: 0; /* Moves the menu to the right side */
+}
+
+#sidemenu ul li:hover {
+    background-color: white;
+    font-weight: bold;
 }

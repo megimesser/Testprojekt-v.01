@@ -26,12 +26,12 @@ function Home({ gainXP }) { // Accept gainXP as a prop
     }
   }
 
-  /*
+  
   // Increase XP on user action or event
   function gainXP(amount) {
     setXp1(prevXp => prevXp + amount);
   }
-  */ 
+  
 
   // Automatically call the level function when xp1 changes
   useEffect(() => {
