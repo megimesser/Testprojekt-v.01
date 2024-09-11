@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';  // Die CSS-Datei für die Navbar-Komponente
 import './App.css';     // Deine globale CSS-Datei
-import Sidemenu from "./sidemenu"
+import Sidemenu from './sidemenu';
 
-function Navbar() {
+function Navbar({ setActiveComponent }) { // Korrekt aus den Props extrahieren
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Zustand für das Öffnen des Menüs
 
   const toggleMenu = () => {
@@ -37,7 +37,7 @@ function Navbar() {
     return (
       <div id="wrapper-0">
         <div>
-          <img id= "switchImage" src="testprojekt/public/images/OOjs_UI_icon_moon.svg" alt="Moon Icon" />
+          <img id="switchImage" src="/images/OOjs_UI_icon_moon.svg" alt="Moon Icon" />
         </div>
         <div className="switch" onClick={toggleSwitch}>
           <div className={`switch-button ${isOn ? 'on' : 'off'}`} />
@@ -48,31 +48,25 @@ function Navbar() {
 
   return (
     <div id="nav">
-      
       <div className="profile">
-      <div>
-        <h1>
-           Active Hero
+        <h1 onClick={() => setActiveComponent('home')}>
+          Active Hero
         </h1>
-      </div>
         <img 
           src="/images/Cat03.jpg" 
           alt="Profile" 
         />
-       
       </div>
-      
-      
+
       <div className="hamburger">
-      <div>
         <Switch />
-      </div>
         <img 
           src="/images/burger-menu-svgrepo-com.svg" 
           alt="Hamburger Menu" 
           onClick={toggleMenu} 
         />
       </div>
+      
       {isMenuOpen && <Menu />} {/* Menu-Komponente anzeigen, wenn isMenuOpen true ist */}
     </div>
   );

@@ -18,7 +18,7 @@ function Navbarfull({ setActiveComponent, activeComponent }) {  // Destructure p
           }}
           transition={{ duration: 1 }}
         >
-          <Navbar />
+          <Navbar setActiveComponent ={setActiveComponent} />
           {/* Pass setActiveComponent to Sidemenu */}
           <Sidemenu setActiveComponent={setActiveComponent} />  
         </motion.div>
